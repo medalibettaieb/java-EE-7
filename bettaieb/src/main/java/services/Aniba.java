@@ -6,11 +6,14 @@ import javax.persistence.PersistenceContext;
 
 import domain.User;
 
+// TODO: Auto-generated Javadoc
 /**
- * Session Bean implementation class Aniba
+ * Session Bean implementation class Aniba.
  */
 @Stateless
 public class Aniba implements AnibaRemote, AnibaLocal {
+	
+	/** The entity manager. */
 	@PersistenceContext
 	private EntityManager entityManager;
 
@@ -21,6 +24,9 @@ public class Aniba implements AnibaRemote, AnibaLocal {
 		// TODO Auto-generated constructor stub
 	}
 
+	/* (non-Javadoc)
+	 * @see services.AnibaRemote#save(domain.User)
+	 */
 	@Override
 	public boolean save(User user) {
 		boolean b = false;

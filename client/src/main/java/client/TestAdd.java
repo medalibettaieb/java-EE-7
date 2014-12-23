@@ -7,8 +7,18 @@ import javax.naming.NamingException;
 import domain.User;
 import services.AnibaRemote;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TestAdd.
+ */
 public class TestAdd {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws NamingException the naming exception
+	 */
 	public static void main(String[] args) throws NamingException {
 		Context  context=new InitialContext();
 		AnibaRemote anibaRemote = (AnibaRemote) context
